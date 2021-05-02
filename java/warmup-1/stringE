@@ -1,0 +1,13 @@
+/*Return true if the given string contains between 1 and 3 'e' chars.
+
+
+stringE("Hello") → true
+stringE("Heelle") → true
+stringE("Heelele") → false
+*/
+
+public boolean stringE(String str) {
+   int c = 0, i = 0;
+  while(i < str.length()) {if(str.charAt(i) == 'e') {c++; } i++;}
+  return (c >= 1 && c <= 3) ? true : false;
+}
