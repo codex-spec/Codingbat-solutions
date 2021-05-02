@@ -1,0 +1,5 @@
+public String stringTimes(String str, int n) {
+  String val = str;
+  if(n == 0) return "";
+  return val + stringTimes(str, n-1);
+}
