@@ -1,0 +1,19 @@
+/*Given a string, return a new string where the last 3 chars are now in upper case. 
+If the string has less than 3 chars, uppercase whatever is there. Note that str.toUpperCase() returns the uppercase version of a string.
+
+
+endUp("Hello") → "HeLLO"
+endUp("hi there") → "hi thERE"
+endUp("hi") → "HI"
+*/
+
+public String endUp(String str) {
+  int l = str.length();
+  if(l <= 3) {
+    return str.toUpperCase();
+  } 
+  return str.substring(0, l-3) + str.substring(l-3, l-2).toUpperCase() 
+  + str.substring(l-2, l-1).toUpperCase() + str.substring(l-1, l).toUpperCase();
+}
+
+
