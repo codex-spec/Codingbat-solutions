@@ -7,8 +7,6 @@ linearIn([1, 2, 4, 6], [2, 3, 4]) → false
 linearIn([1, 2, 4, 4, 6], [2, 4]) → true
 */
 
-```
-
 public boolean linearIn(int[] outer, int[] inner) {
   int c = 0, l = inner.length, sig = 0;
   for(int i = 0; i < inner.length; i++) {
@@ -23,4 +21,3 @@ public boolean linearIn(int[] outer, int[] inner) {
   return (c >= l) ? true : false;
 }
 
-```
